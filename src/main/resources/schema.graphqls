@@ -3,6 +3,7 @@ type Continent {
     name: String!
     area: Int!
     population: Int!
+    countries: [Country!]!
 }
 
 type Country {

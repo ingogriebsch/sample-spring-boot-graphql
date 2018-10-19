@@ -8,4 +8,6 @@ import com.github.ingogriebsch.sample.spring.boot.graphql.model.Country;
 @Repository
 public interface CountryRepository extends CrudRepository<Country, String> {
 
+    Iterable<Country> findByContinentId(String id);
+
 }
