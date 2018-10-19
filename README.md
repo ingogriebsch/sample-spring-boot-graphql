@@ -6,6 +6,10 @@
 
 This sample shows you how to integrate GraphQL into Spring Boot.
 
+If you are starting up the service it is running under http://localhost:8080 and the following GraphQL specific endpoints are available:
+* http://localhost:8080/graphql houses the endpoint the GraphQL schema is mapped to allow you to execute the queries, mutations, subscriptions.
+* http://localhost:8080/graphiql houses a little UI allowing you to play with what is defined in the schema (it in fact uses the /graphql endpoint).
+
 ## Related links which are helpful to get in touch with the topic
 * [Introduction to GraphQL](https://graphql.org/learn/)
 * [Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql/)
