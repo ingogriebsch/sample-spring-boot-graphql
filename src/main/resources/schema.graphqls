@@ -5,5 +5,5 @@ type Continent {
 }
 
 type Query {
-    continents: [Continent]!
+    continents: [Continent!]!
 }
