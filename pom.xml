@@ -27,7 +27,6 @@
     <name>Spring Boot GraphQL sample</name>
     <description>This sample shows you how to integrate GraphQL into Spring Boot</description>
 
-
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
