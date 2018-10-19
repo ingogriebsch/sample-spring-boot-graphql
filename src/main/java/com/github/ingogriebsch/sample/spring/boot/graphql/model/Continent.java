@@ -1,5 +1,6 @@
 package com.github.ingogriebsch.sample.spring.boot.graphql.model;
 
+import static java.util.UUID.randomUUID;
 import static lombok.AccessLevel.PACKAGE;
 import static lombok.AccessLevel.PRIVATE;
 
@@ -19,6 +20,8 @@ import lombok.Setter;
 public class Continent {
 
     @Id
+    private final String id = randomUUID().toString();
+
     @Setter(PRIVATE)
     private String name;
     private Integer area;
