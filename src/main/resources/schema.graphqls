@@ -5,6 +5,14 @@ type Continent {
     population: Int!
 }
 
+type Country {
+    id: ID!
+    name: String!
+    area: Int!
+    population: Int!
+    density: Int!
+}
+
 type Query {
     continents: [Continent!]!
 }
