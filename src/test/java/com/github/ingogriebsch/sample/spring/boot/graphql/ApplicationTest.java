@@ -23,7 +23,7 @@ public class ApplicationTest {
         main(new String[] {});
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NullPointerException.class)
     public void main_should_throw_exception_if_called_with_null() {
         main(null);
     }
