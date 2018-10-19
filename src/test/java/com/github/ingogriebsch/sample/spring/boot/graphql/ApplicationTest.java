@@ -9,19 +9,22 @@
  */
 package com.github.ingogriebsch.sample.spring.boot.graphql;
 
+import static com.github.ingogriebsch.sample.spring.boot.graphql.Application.main;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
 public class ApplicationTest {
 
     @Test
-    public void contextLoads() {
-        // nothing to do here because the configuration of the test results in starting
-        // up the application context.
+    public void main_should_load_context() {
+        main(new String[] {});
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void main_should_throw_exception_if_called_with_null() {
+        main(null);
+    }
 }
