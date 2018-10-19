@@ -21,7 +21,7 @@ public class Startup implements CommandLineRunner {
     private final ContinentRepository continentRepository;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(@NonNull String... args) throws Exception {
         List<Continent> continents = newArrayList(new Continent("Africa", 30370000, 1287920000L),
             new Continent("Antarctica", 14000000, 4490L), new Continent("Asia", 44579000, 4545133000L),
             new Continent("Australia", 8600000, 41261000L), new Continent("Europe", 10180000, 742648000L),
