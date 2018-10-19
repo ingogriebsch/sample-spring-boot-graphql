@@ -1,5 +1,7 @@
 type Continent {
     name: String!
+    area: Int!
+    population: Int!
 }
 
 type Query {
