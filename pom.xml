@@ -26,6 +26,9 @@
 
     <name>Spring Boot GraphQL sample</name>
     <description>This sample shows you how to integrate GraphQL into Spring Boot</description>
+    <url>https://github.com/ingogriebsch/sample-spring-boot-graphql</url>
+    <inceptionYear>2018</inceptionYear>
+    <organization />
 
     <licenses>
         <license>
@@ -34,6 +37,10 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <url>${project.url}</url>
+    </scm>
 
     <developers>
         <developer>
@@ -44,6 +51,11 @@
             <timezone>Europe/Berlin</timezone>
         </developer>
     </developers>
+
+	<issueManagement>
+	    <url>${project.url}/issues</url>
+	    <system>GitHub</system>
+	</issueManagement>    
 
     <properties>
         <java.version>1.8</java.version>
