@@ -10,6 +10,12 @@ If you are starting up the service it is running under http://localhost:8080 and
 * http://localhost:8080/graphql houses the endpoint the GraphQL schema is mapped to allow you to execute the queries, mutations, subscriptions.
 * http://localhost:8080/graphiql houses a little UI allowing you to play with what is defined in the schema (it in fact uses the /graphql endpoint).
 
+## Used frameworks
+Collection of the mainly used frameworks in this project. There are more, but they are not that present inside the main use case therefore they are not listed here.
+* [GraphQL](https://github.com/graphql-java-kickstart/graphql-java-tools/)
+* [Spring Boot](https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/)
+* [Spring Boot GraphQL Starter](https://github.com/graphql-java-kickstart/graphql-spring-boot/)
+
 ## Related links which are helpful to get in touch with the topic
 * [Introduction to GraphQL](https://graphql.org/learn/)
 * [Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql/)
@@ -28,27 +34,6 @@ If you are starting up the service it is running under http://localhost:8080 and
 * [From Zero to GraphQL Subscriptions](https://hackernoon.com/from-zero-to-graphql-subscriptions-416b9e0284f3)
 * [Subscriptions in GraphQL and Relay](https://graphql.org/blog/subscriptions-in-graphql-and-relay/)
 * [facebook/graphql](https://github.com/facebook/graphql)
-
-## Used frameworks
-Collection of the mainly used frameworks in this project. There are more, but they are not that present inside the main use case therefore they are not listed here.
-
-### Core
-* [GraphQL](https://github.com/graphql-java-kickstart/graphql-java-tools/)
-* [Spring Boot](https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/)
-* [Spring Boot GraphQL Starter](https://github.com/graphql-java-kickstart/graphql-spring-boot/)
-
-### Utility
-* [Slf4J](https://www.slf4j.org/index.html)
-* [Project Lombok](https://projectlombok.org)
-* [Google Guava](https://github.com/google/guava)
-* [Apache Commons](https://commons.apache.org)
-
-### Test
-* [Junit](https://junit.org/junit4)
-* [AssertJ](http://joel-costigliola.github.io/assertj)
-* [Hamcrest](http://hamcrest.org/JavaHamcrest)
-* [Mockito](http://site.mockito.org)
-* [JsonPath](https://github.com/json-path/JsonPath)
 
 ## License
 This code is open source software licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.html).
