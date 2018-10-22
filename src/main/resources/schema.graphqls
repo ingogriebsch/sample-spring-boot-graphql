@@ -16,4 +16,5 @@ type Country {
 
 type Query {
     continents: [Continent!]!
+    continentByName(name: String!): Continent
 }

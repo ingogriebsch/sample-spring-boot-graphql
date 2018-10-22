@@ -1,5 +1,7 @@
 package com.github.ingogriebsch.sample.spring.boot.graphql.resolver;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Component;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
@@ -18,6 +20,10 @@ public class Query implements GraphQLQueryResolver {
 
     public Iterable<Continent> continents() {
         return continentRepository.findAll();
+    }
+
+    public Optional<Continent> continentByName(@NonNull String name) {
+        return continentRepository.findByName(name);
     }
 
 }

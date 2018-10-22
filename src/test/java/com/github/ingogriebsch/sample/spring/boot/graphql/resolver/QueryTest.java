@@ -1,8 +1,11 @@
 package com.github.ingogriebsch.sample.spring.boot.graphql.resolver;
 
 import static com.google.common.collect.Sets.newHashSet;
+import static java.util.Optional.of;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
+
+import java.util.Optional;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,5 +40,26 @@ public class QueryTest {
 
         Iterable<Continent> continents = query.continents();
         assertThat(continents).isNotNull().contains(continent);
+    }
+
+    @Test
+    public void continentByName_should_return_empty_optional_if_continent_not_available() throws Exception {
+        String name = "Africa";
+        given(continentRepository.findByName(name)).willReturn(Optional.empty());
+
+        Optional<Continent> optional = query.continentByName(name);
+        assertThat(optional).isNotNull();
+        assertThat(optional.isPresent()).isFalse();
+    }
+
+    @Test
+    public void continentByName_should_return_optional_if_continent_available() throws Exception {
+        Continent continent = new Continent("Africa");
+        given(continentRepository.findByName(continent.getName())).willReturn(of(continent));
+
+        Optional<Continent> optional = query.continentByName(continent.getName());
+        assertThat(optional).isNotNull();
+        assertThat(optional.isPresent()).isTrue();
+        assertThat(optional.get()).isEqualTo(continent);
     }
 }
