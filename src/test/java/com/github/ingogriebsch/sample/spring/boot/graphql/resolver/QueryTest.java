@@ -42,6 +42,11 @@ public class QueryTest {
         assertThat(continents).isNotNull().contains(continent);
     }
 
+    @Test(expected = NullPointerException.class)
+    public void continentByName_should_throw_exception_if_called_with_null() throws Exception {
+        query.continentByName(null);
+    }
+
     @Test
     public void continentByName_should_return_empty_optional_if_continent_not_available() throws Exception {
         String name = "Africa";
