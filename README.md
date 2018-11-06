@@ -13,11 +13,13 @@ If you are starting up the service it is running under <http://localhost:8080> a
 
 ## Used frameworks
 Collection of the mainly used frameworks in this project. There are more, but they are not that present inside the main use case therefore they are not listed here.
+
 *   [GraphQL](https://github.com/graphql-java-kickstart/graphql-java-tools/)
 *   [Spring Boot](https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/)
 *   [Spring Boot GraphQL Starter](https://github.com/graphql-java-kickstart/graphql-spring-boot/)
 
 ## Related links which are helpful to get in touch with the topic
+
 *   [Introduction to GraphQL](https://graphql.org/learn/)
 *   [Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql/)
 *   [GraphQL Java - Spring Boot Example](https://www.codenotfound.com/graphql-java-spring-boot-example.html)
