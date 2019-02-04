@@ -1,5 +1,6 @@
 # Spring Boot GraphQL sample
 [![Build Status](https://travis-ci.org/ingogriebsch/sample-spring-boot-graphql.svg?branch=master)](https://travis-ci.org/ingogriebsch/sample-spring-boot-graphql)
+[![Codecov Status](https://codecov.io/gh/ingogriebsch/sample-spring-boot-graphql/branch/master/graph/badge.svg)](https://codecov.io/gh/ingogriebsch/sample-spring-boot-graphql)
 [![Coveralls Status](https://coveralls.io/repos/github/ingogriebsch/sample-spring-boot-graphql/badge.svg?branch=master)](https://coveralls.io/github/ingogriebsch/sample-spring-boot-graphql?branch=master)
 [![Codacy Status](https://api.codacy.com/project/badge/Grade/ecf1295a97c0450399e6ad20f82f0d5a)](https://www.codacy.com/app/ingo.griebsch/sample-spring-boot-graphql?utm_source=github.com&utm_medium=referral&utm_content=ingogriebsch/sample-spring-boot-graphql&utm_campaign=Badge_Grade)
 [![DepShield Status](https://depshield.sonatype.org/badges/ingogriebsch/sample-spring-boot-graphql/depshield.svg)](https://depshield.github.io)
