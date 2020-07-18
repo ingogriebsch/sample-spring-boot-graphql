@@ -10,6 +10,7 @@
 package com.github.ingogriebsch.sample.spring.boot.graphql.model;
 
 import static java.util.UUID.randomUUID;
+
 import static lombok.AccessLevel.PACKAGE;
 import static lombok.AccessLevel.PRIVATE;
 

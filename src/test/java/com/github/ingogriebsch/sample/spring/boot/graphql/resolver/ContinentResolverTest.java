@@ -13,15 +13,14 @@ import static com.google.common.collect.Sets.newHashSet;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 
+import com.github.ingogriebsch.sample.spring.boot.graphql.model.Continent;
+import com.github.ingogriebsch.sample.spring.boot.graphql.model.Country;
+import com.github.ingogriebsch.sample.spring.boot.graphql.repository.CountryRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import com.github.ingogriebsch.sample.spring.boot.graphql.model.Continent;
-import com.github.ingogriebsch.sample.spring.boot.graphql.model.Country;
-import com.github.ingogriebsch.sample.spring.boot.graphql.repository.CountryRepository;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ContinentResolverTest {

@@ -11,15 +11,14 @@ package com.github.ingogriebsch.sample.spring.boot.graphql.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.ingogriebsch.sample.spring.boot.graphql.model.Continent;
+import com.github.ingogriebsch.sample.spring.boot.graphql.model.Country;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import com.github.ingogriebsch.sample.spring.boot.graphql.model.Continent;
-import com.github.ingogriebsch.sample.spring.boot.graphql.model.Country;
 
 @DataJpaTest
 @RunWith(SpringRunner.class)
